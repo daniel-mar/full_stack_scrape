@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraped</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+
+<body>
+
+<div class="container secondary_bg mt-5 p-5">
+    <nav class="navbar bg-warning wht-sh form-inline border border-success">
+        <h3>GotScraped</h3>
+        <a href="http://">Dashboard</a>
+    </nav>
+
+    <div class="container primary_bg p-5">
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="table-light">
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Played</th>
+            <th>Wins</th>
+            <th>Draws</th>
+            <th>Losses</th>
+            <th>Goals Suffered</th>
+            <th>Goals Made</th>
+            <th>Goal Difference</th>
+            <th>Points</th>
+        </thead>
+
+
+        <tbody>
+        {% for team in data %}
+            <tr class="table-warning">
+                <td>{{team.rank}}</td>
+                <td>{{team.pl_team}}</td>
+                <td>{{team.games_played}}</td>
+                <td>{{team.games_won}}</td>
+                <td>{{team.games_drawn}}</td>
+                <td>{{team.games_lost}}</td>
+                <td>{{team.goals_for}}</td>
+                <td>{{team.goals_against}}</td>
+                <td>{{team.goal_diff}}</td>
+                <td>{{team.total_points}}</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+        </table>
+    </div>
+
+</div>
+</body>
+
+</html>

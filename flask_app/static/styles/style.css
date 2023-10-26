@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #b9b9b9;
+    background-image: url('../images/artists_bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* have image be full size of webpage by using 100 instead of contain */
+    background-size: 100;
+}
+
+.primary_bg {
+    background-color: rgb(216, 180, 144, 0.72);
+}
+
+.secondary_bg {
+    background-color: rgb(180, 180, 180, 0.72);
+}
+
+.blk-sh {
+    text-shadow: 0 0 3px black;
+}
+.wht-sh {
+    text-shadow: 0 0 3px white;
+}
+
+.bg_shadow {
+    box-shadow: 0 0 3px black;
+}
