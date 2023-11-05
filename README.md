@@ -1,5 +1,10 @@
-# full_stack_scrape
-Python Flask server ready for FS dev, used to display scraping agent live on my dashboard.
+# Scraping Application / Server
+https://github.com/daniel-mar/full_stack_scrape/assets/33047490/8be46d25-f4ba-4d48-bf5b-30b428395e23
+
+Full Stack ready application using:
+Python3, Flask, BootstrapJS, Libraries: [ Requests, Beautiful Soup:BS4 ]
+
+Used to display scraping agent live on my dashboard.
 Video demonstration, comparing to table on my server to live website after targeting, cleaning, creating web server and serving data to my own table.
 
 ## Disclaimer: This application will request on reload of webpage
@@ -16,5 +21,4 @@ To add, I had wanted to achieve this because before I had use the PapaParseJs fr
 The collecting of data, cleaning and setting up the table for viewing was similar to what I was using the framework for except for static .CSV files.
 I mention that because this data was first stored as a .CSV file prior to making it a web server.
 
-https://github.com/daniel-mar/full_stack_scrape/assets/33047490/8be46d25-f4ba-4d48-bf5b-30b428395e23
 
